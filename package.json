@@ -3,6 +3,15 @@
   "version": "0.0.1",
   "description": "A crash-test lab for AI agents",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jatinrise/agentdoctor.git"
+  },
+  "author": "Jatin Godnani",
+  "license": "MIT",
+  "keywords": ["ai", "agents", "testing", "llm"],
   "scripts": {
     "try": "tsx scripts/try-tool.ts"
   },
