@@ -6,7 +6,6 @@ A crash-test lab for AI agents: it reads an agent's code, attacks its weak spots
 
 ## What works today
 
-- `detectFramework`: finds the agent framework, LLM provider, and entry point
 - Codebase tools (`listFiles`, `searchCode`, `readFile`), locked to the target repo
 - Bring-your-own-model: set `AGENTDOCTOR_MODEL=provider:model` (anthropic, openai, nebius, openrouter, bedrock, ollama)
 - A demo target agent in `targets/sales-agent`

@@ -1,12 +1,10 @@
 // Try tools by hand before wiring them to the AI.
 // Usage: pnpm try <path-to-agent-repo>
-import { detectFramework } from '../src/tools/detectFramework.js'
 import { codebaseTools } from '../src/tools/codebase.js'
 
 const repo = process.argv[2] ?? 'targets/sales-agent'
 const { listFiles, searchCode, readFile } = codebaseTools(repo)
 
-console.log('--- detectFramework'); console.log(await detectFramework(repo))
 console.log('--- listFiles');        console.log(await listFiles.execute({ dir: '.' }))
 console.log('--- searchCode "execute:"'); console.log(await searchCode.execute({ pattern: 'execute:', dir: '.' }))
 console.log('--- readFile src/tools.ts 1-12'); console.log((await readFile.execute({ path: 'src/tools.ts', startLine: 1, endLine: 12 })).content)
