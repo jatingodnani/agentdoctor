@@ -9,9 +9,15 @@
   },
   "author": "Jatin Godnani",
   "license": "MIT",
-  "keywords": ["ai", "agents", "testing", "llm"],
+  "keywords": [
+    "ai",
+    "agents",
+    "testing",
+    "llm"
+  ],
   "scripts": {
-    "try": "tsx scripts/try-tool.ts"
+    "try": "tsx scripts/try-tool.ts",
+    "test": "node --import tsx --test test/*.test.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
