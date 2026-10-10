@@ -1,0 +1,22 @@
+{
+  "name": "agentdoctor",
+  "version": "0.0.1",
+  "description": "A crash-test lab for AI agents",
+  "type": "module",
+  "scripts": {
+    "try": "tsx scripts/try-tool.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@ai-sdk/amazon-bedrock": "^5.0.113",
+    "@ai-sdk/anthropic": "^4.0.78",
+    "@ai-sdk/openai": "^4.0.91",
+    "@ai-sdk/openai-compatible": "^3.0.67",
+    "ai": "^7.0.137",
+    "zod": "^4.6.5"
+  }
+}
